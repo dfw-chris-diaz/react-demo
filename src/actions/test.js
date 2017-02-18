@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export function show(text) {
   return function(dispatch) {
-    axios.get('http://localhost/cgi-bin/test.py?data=' + text)
+    axios.get('/cgi-bin/test.py?data=' + text)
     .then(function (response) {
       const action = {
         type: TEST,
