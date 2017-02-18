@@ -1,0 +1,51 @@
+.brightRedText {
+  color: #ff0000;
+}
+
+.purpleText {
+  color: #333399;
+}
+
+.blackText{
+  color: #000000;
+}
+
+.lightgreenText {
+  color: #00ff00;
+}
+
+.orangeText {
+  color: #ff6600;
+}
+
+.yellowBackground {
+  background-color: #ffff99;
+}
+
+.brightYellowBackground {
+  background-color: #ffff00;
+}
+
+.darkGreyBackground {
+  background-color: #808080;
+}
+
+.lightGreyBackground {
+  background-color: #c0c0c0;
+}
+
+.lightBlueBackground {
+  background-color: #ccffff;
+}
+
+.purpleBackground {
+  background-color: #666699;
+}
+
+.blackBackground {
+  background-color: #000000;
+}
+
+.orangeBackground {
+  background-color: #ffcc99;
+}

@@ -1,0 +1,7 @@
+td {
+    vertical-align: top;
+}
+
+#shMaintable {
+  table-layout: fixed;
+}

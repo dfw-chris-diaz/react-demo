@@ -1,0 +1,14 @@
+/*These Aleck fonts look bad on the web*/
+/*@font-face {
+    font-family: TestFont;
+    src: url(../fonts/test.ttf);
+    font-weight: bold;
+}
+
+div {
+    font-family: TestFont;
+}*/
+
+div {
+    font-family: Arial Narrow;
+}
