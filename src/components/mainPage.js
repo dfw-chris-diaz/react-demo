@@ -1,12 +1,10 @@
 import React from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
-import {connect} from "react-redux";
-import { show } from "../actions/test";
 import Tab1LandingPage from './tab1/landingPage';
 import Tab2LandingPage from './tab2/landingPage';
 import Tab3LandingPage from './tab3/landingPage';
 
-class MainPage extends React.Component {
+export default class MainPage extends React.Component {
   constructor (props) {
     super();
 
@@ -18,7 +16,6 @@ class MainPage extends React.Component {
   
   componentDidMount(){
     this.handleSelect(this.props.defaultTab);
-    this.props.dispatch(show("GOT THROUGH REDUX"));
   }
   
   handleSelect = (key) => {
@@ -47,7 +44,6 @@ class MainPage extends React.Component {
   render() {
     return (
       <div>
-        {this.props.loginText}
         <Tabs activeKey={this.state.key} onSelect={this.handleSelect} id="mainNavigator">
           <Tab eventKey={1} title="Tab 1" />
           <Tab eventKey={2} title="Tab 2" />
@@ -59,17 +55,3 @@ class MainPage extends React.Component {
     );
   }
 }
-
-MainPage.defaultProps = {
-  loginText: "DID NOT GET THROUGH REDUX, YET"
-};
-
-function mapStateToProps(state) {
-  const loginText = state.test.text;
-  
-  return {
-    loginText
-  };
-}
-
-export default connect(mapStateToProps)(MainPage);

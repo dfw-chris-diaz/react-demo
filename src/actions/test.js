@@ -10,7 +10,6 @@ export function show(text) {
         text: response.data.reply
       }
       dispatch(action);
-      console.log(response);
     })
     .catch(function (error) {
       console.log(error);
